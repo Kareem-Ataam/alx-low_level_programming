@@ -4,3 +4,4 @@
 3-print_alphabets.c:Print the alphabet in both cases
 4-print_alphabt.c:Print the alphabets except e and q
 5-print_numbers.c:Print from 0-9 
+6-print_numberz.c:Prints 0-9
