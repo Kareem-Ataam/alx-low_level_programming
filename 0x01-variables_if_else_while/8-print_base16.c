@@ -5,13 +5,14 @@
 */
 int main(void)
 {
-	int b = 0x0;
+	int b = 0;
+	char c = 'a';
 
-	while (b <= 0xf)
-	{
-		putchar('0' + b);
-		b++;
-	}
+	for (; b <= 9; b++)
+		putchar(b + '0');
+
+	for (; c <= 'f'; c++)
+		putchar(c);
 	putchar('\n');
 	return (0);
 }
