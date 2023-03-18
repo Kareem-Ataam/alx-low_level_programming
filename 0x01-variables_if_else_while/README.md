@@ -6,3 +6,4 @@
 5-print_numbers.c:Print from 0-9 
 6-print_numberz.c:Prints 0-9
 7-print_tebahpla.c:Print the alphabets in reversed order
+9-print_comb.c:Print 0-9 separated by commas
