@@ -1,5 +1,5 @@
+#include <ctype.h>
 #include "main.h"
-#include "ctype"
 /**
 * _islower - Check if a given character is
 * in upper or lower case
