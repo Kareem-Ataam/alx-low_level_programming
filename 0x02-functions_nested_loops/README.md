@@ -5,3 +5,4 @@
 4-isalpha.c:Check is a given letter is one of the alphabet
 5-sign.c:Print the sign of a given number
 6-abs.c:Get the absolute of a number
+7-print_last_digit.c:Print the last digit of a number
