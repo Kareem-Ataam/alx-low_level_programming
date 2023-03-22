@@ -21,11 +21,10 @@ void times_table(void)
 			}
 			if (j == 9)
 			{
-				_putchar('$');
 				continue;
 			}
 			_putchar(',');
-			if (i * j + 1 > 9)
+			if (i * (j + 1) > 9)
 			{
 				_putchar(' ');
 			}
