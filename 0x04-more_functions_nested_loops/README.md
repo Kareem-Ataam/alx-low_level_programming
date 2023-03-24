@@ -6,3 +6,4 @@
 5-more_numbers.c :Print the numbers from 0 to 14 10 times 
 void print_line(int n):Print a line
 7-print_diagonal.c:Print a diagonal of \
+8-print_square.c:Print a square of #'s
