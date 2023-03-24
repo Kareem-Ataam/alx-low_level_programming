@@ -8,3 +8,4 @@ void print_line(int n):Print a line
 7-print_diagonal.c:Print a diagonal of \
 8-print_square.c:Print a square of #'s
 9-fizz_buzz.c:Solve the Fizz Buzz Problem
+10-print_triangle.c:Print a triangle
