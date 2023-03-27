@@ -2,3 +2,4 @@
 1-swap.c:Swap two varaibles
 2-strlen.c:Get the length of a string
 3-puts.c:Print a string
+4-print_rev.c:Print a string in reverse
