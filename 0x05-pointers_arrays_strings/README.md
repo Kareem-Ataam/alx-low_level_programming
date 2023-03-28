@@ -4,3 +4,4 @@
 3-puts.c:Print a string
 4-print_rev.c:Print a string in reverse
 5-rev_string.c:Revrese a string
+6-puts2.c:Print every other character of a string, starting with the first character
