@@ -7,3 +7,4 @@
 6-puts2.c:Print every other character of a string, starting with the first character
 7-puts_half.c:Print the last half of a string
 8-print_array.c:Print n elements from an array
+9-strcpy.c:Copy one string to another
