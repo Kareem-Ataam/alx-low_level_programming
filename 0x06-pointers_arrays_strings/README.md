@@ -3,3 +3,4 @@
 2-strncpy.c:Copy limited number of characters
 3-strcmp.c:Compare two strings
 4-rev_array.c:Reversing an array of integers
+5-string_toupper.c:Convert string's lower case characters to uppercase
