@@ -4,3 +4,4 @@
 3-strcmp.c:Compare two strings
 4-rev_array.c:Reversing an array of integers
 5-string_toupper.c:Convert string's lower case characters to uppercase
+6-cap_string.c:Captalize all the words of a string
