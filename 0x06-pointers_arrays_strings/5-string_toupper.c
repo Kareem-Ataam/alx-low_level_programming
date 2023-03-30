@@ -1,4 +1,4 @@
-#include<string.h>
+#include<ctype.h>
 /**
  * string_toupper - Convert all the lower characters of a
  * to upper case
