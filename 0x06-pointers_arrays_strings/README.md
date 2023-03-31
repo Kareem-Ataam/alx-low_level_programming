@@ -5,3 +5,4 @@
 4-rev_array.c:Reversing an array of integers
 5-string_toupper.c:Convert string's lower case characters to uppercase
 6-cap_string.c:Captalize all the words of a string
+7-leet.c:Reformat a string to be written in leet speak
