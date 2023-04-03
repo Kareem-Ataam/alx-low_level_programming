@@ -1,8 +1,7 @@
 #include<string.h>
-#include<stdio.h>
 #include"main.h"
 /**
- * print_chesboard - Print the chessboard
+ * print_chessboard - Print the chessboard
  * @a: Two dimensional containg board elements
  */
 void print_chessboard(char (*a)[8])
