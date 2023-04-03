@@ -5,3 +5,4 @@
 4-strpbrk.c:Searche a string for any of a set of bytes
 5-strstr.c:Locate a substring
 7-print_chessboard.c:Print the chessboard
+8-print_diagsums.c:Print the sum of the two diagonals of a square matrix of integers
