@@ -9,7 +9,7 @@
 char *create_array(unsigned int size, char c)
 {
 	char *ptr;
-	int i;
+	size_t i;
 
 	if (size == 0)
 	{
