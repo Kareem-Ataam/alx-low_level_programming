@@ -25,7 +25,7 @@ char *str_concat(char *s1, char *s2)
 	{
 		ptr[i] = s1[i];
 	}
-	for (i = strlen(s1); i < len1 + len2; i++, j++)
+	for (i = len1; i < len1 + len2; i++, j++)
 	{
 		ptr[i] = s2[j];
 	}
