@@ -16,11 +16,11 @@ char *str_concat(char *s1, char *s2)
 	len1 = (s1 == NULL) ? 0 : strlen(s1);
 	len2 = (s2 == NULL) ? 0 : strlen(s2);
 	j = 0;
-	if (s1 == NULL && s2 == NULL)
+	ptr = malloc(len1 + len2 + 1);
+	if (ptr == NULL)
 	{
 		return (NULL);
 	}
-	ptr = malloc(len1 + len2 + 1);
 	for (i = 0; i < len1; i++)
 	{
 		ptr[i] = s1[i];
