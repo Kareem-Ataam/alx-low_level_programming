@@ -1,4 +1,5 @@
 #include<stdlib.h>
+#include<string.h>
 /**
  * _calloc - Allocate an array of the heap memory and intialize it with zero
  * @nmemb: Number of array elements
@@ -8,8 +9,7 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
-	int *ptr;
-	size_t i;
+	void *ptr;
 
 	if (nmemb == 0 || size == 0)
 	{
@@ -20,9 +20,6 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 	{
 		return (NULL);
 	}
-	for (i = 0; i < nmemb; i++)
-	{
-		ptr[i] = 0;
-	}
-	return (ptr);
+	return (memset(ptr, 0, nmemb));
 }
+
