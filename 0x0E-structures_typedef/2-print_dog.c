@@ -1,3 +1,4 @@
+#include<stdio.h>
 #include"dog.h"
 /**
  * print_dog - Print the items of the dog variable
@@ -5,7 +6,7 @@
  */
 void print_dog(struct dog *d)
 {
-	if (d == NULL)
+	if (!d)
 	{
 		return;
 	}
