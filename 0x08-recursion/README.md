@@ -6,3 +6,4 @@
 5-sqrt_recursion.c:Get the sqrt of a number
 6-is_prime_number.c:Check if a number is prime or not
 100-is_palindrome.c:Check if a string is palindrome
+101-wildcmp.c:Check if two strings are identical
