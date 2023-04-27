@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include <stdlib.h>
-#include"main.h"
+#include"lists.h"
 /**
  * print_list - Print all the elments of a linked list
  * @h: Pointer to the first node of the Linked list
