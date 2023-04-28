@@ -1,0 +1,39 @@
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+#include "lists.h"
+/**
+ * add_node_end - add a node to the end of a linked list
+ * @head: Pointer to the pointer that points to the first node
+ * @str: The data part of the node
+ * Return: Pointer the last node
+ */
+list_t *add_node_end(list_t **head, const char *str)
+{
+	list_t *temp, *last;
+	char *result;
+
+	result = strdup(str);
+	if (!result)
+	{
+		return (NULL);
+	}
+	temp = malloc(sizeof(list_t));
+	temp->str = result;
+	temp->len = strlen(str);
+	temp->next = NULL;
+	last = (*head);
+	if (!last)
+	{
+		(*head) = temp;
+	}
+	else
+	{
+		while (last->next)
+		{
+			last = last->next;
+		}
+		last->next = temp;
+	}
+	return (temp);
+}
