@@ -8,3 +8,4 @@
 7-get_nodeint.c:Access the node the given index
 8-sum_listint.c:Get the summation of the data part
 9-insert_nodeint.c:Insert a node at any given index
+10-delete_nodeint.c:delete a node at any given index
