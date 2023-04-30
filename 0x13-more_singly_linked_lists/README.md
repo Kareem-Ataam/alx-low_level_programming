@@ -6,3 +6,4 @@
 5-free_listint2.c:Free all the nodes of a list in other method
 6-pop_listint.c:Delete the first node of the linked list
 7-get_nodeint.c:Access the node the given index
+8-sum_listint.c:Get the summation of the data part
