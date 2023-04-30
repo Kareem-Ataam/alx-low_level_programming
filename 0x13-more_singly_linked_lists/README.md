@@ -4,3 +4,4 @@
 3-add_nodeint_end.c:Add a new node at the end of a list
 4-free_listint.c:free all the nodes of a list
 5-free_listint2.c:Free all the nodes of a list in other method
+6-pop_listint.c:Delete the first node of the linked list
