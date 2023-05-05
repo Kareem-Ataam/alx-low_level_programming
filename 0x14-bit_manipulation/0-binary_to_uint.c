@@ -1,6 +1,3 @@
-#include <string.h>
-#include <math.h>
-#include <ctype.h>
 #include "main.h"
 /**
  * binary_to_uint - Convert a binary number to integer
