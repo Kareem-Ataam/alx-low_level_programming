@@ -9,7 +9,7 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned int exclusive_or, count;
+	unsigned long int exclusive_or, count;
 
 	exclusive_or = n ^ m;
 	count = 0;
