@@ -11,5 +11,5 @@ void print_binary(unsigned long int n)
 		print_binary(n >> 1);
 	}
 	/*Check if the least significant bit is zero or one*/
-	printf("%c", (n & 1) ? '1' : '0');
+	_putchar((n & 1) ? '1' : '0');
 }
