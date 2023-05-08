@@ -47,7 +47,7 @@ void copy(const char *src, const char *dst)
 		sz_write = write(fd_dst, buff, strlen(buff));
 		if (sz_write < 0)
 		{
-			dprintf(STDERR_FILENO, "Error: Can't write from file %s\n", dst);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dst);
 			exit(99);
 		}
 		if (flag)
