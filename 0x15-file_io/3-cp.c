@@ -3,6 +3,7 @@
 #include <unistd.h>
 #include <fcntl.h>
 #include <string.h>
+#include "main.h"
 void copy(const char *src, const char *dst);
 /**
  * main - copy a file to another file, main is the driver
@@ -21,21 +22,20 @@ int main(int argc, char *argv[])
 
 	return (0);
 }
-
 /**
  * copy - The function that copies the src to dst
  * @src: The source
  * @dst: The dstination
  */
+
 void copy(const char *src, const char *dst)
 {
-	int fd_src, fd_dst, flag;
+	int fd_src, fd_dst;
 	char buff[1025];
 	ssize_t sz_read, sz_write;
 
 	fd_src = open(src, O_RDONLY);
-	fd_dst = creat(dst, 0664);
-	flag = 1;
+	fd_dst = open(dst, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	while ((sz_read = read(fd_src, buff, 1024)) != 0)
 	{
 		if (sz_read < 0)
@@ -43,18 +43,12 @@ void copy(const char *src, const char *dst)
 			dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", src);
 			exit(98);
 		}
-		buff[sz_read] = '\0';
-		sz_write = write(fd_dst, buff, strlen(buff));
-		if (sz_write < 0)
+		/*buff[sz_read] = '\0';*/
+		sz_write = write(fd_dst, buff, (ssize_t)sz_read);
+		if (sz_write != sz_read)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", dst);
 			exit(99);
-		}
-		if (flag)
-		{
-			close(fd_dst);
-			fd_dst = open(dst, O_APPEND);
-			flag = 0;
 		}
 	}
 	if (close(fd_src) < 0)
